@@ -59,3 +59,17 @@ img.mobile {
 img.desktop {
     display: none;
 }
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--green);
+    color: var(--beige);
+    padding: 10px;
+    text-align: center;
+}
