@@ -14,10 +14,9 @@
         <h3>Coffee Shop</h3>
         <nav id="menu">
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#coffee">Coffee</a></li>
-                <li><a href="">Pastries</a></li>
-                <li><a href="">Learn</a></li>
+                <li><a href="#pastries">Pastries</a></li>
+                <li><a href="#learn">Learn</a></li>
             </ul>
         </nav>
     </header>
@@ -27,9 +26,9 @@
     </section>
     <main>
         <section id="coffee">
-            <div id="coffeemenu">
+            <div class="menu-item">
                 <h1>Coffee</h1>
-                <p>350ml · 475ml · 600ml</p>
+                <p id="ml">350ml · 475ml · 600ml</p>
                 <article>
                     <h3>Espresso</h3>
                     <p>Rich and intense, made with a concentrated shot of freshly brewed coffee.</p>
@@ -58,10 +57,11 @@
                 <article>
                     <h3>Mocha Latte</h3>
                     <h4>Hot / Iced</h4>
-                    <p>Rich chocolate and espresso blended with steamed milk for the perfect balance of coffee and chocolate. Served in Dark Chocolate or White Chocolate.</p>
+                    <p>Rich chocolate and espresso blended with steamed milk for the perfect balance of coffee and chocolate. <br>
+                    Served in Dark Chocolate or White Chocolate.</p>
                 </article>
                 <article>
-                    <h3>Colod Brew</h3>
+                    <h3>Cold Brew</h3>
                     <p>Slow-steeped coffee served chilled for a smooth, refreshing taste with low acidity.
                     </p>
                 </article>
@@ -81,20 +81,109 @@
                     <h4>Hot / Iced</h4>
                     <p>A selection of carefully chosen teas, brewed fresh for a simple and soothing cup.</p>
                 </article>
+                <article id="milks">
+                    <p>Make it your way! Choose whole, non-fatchoose whole, non-fat, or alternative milk (almond, oat, or soy) with any coffee.</p>
+                </article>
             </div>
-            <div id="coffeeimg">
-
-            </div>
+            <div id="coffeeimg">  </div>
         </section>
         <section id="pastries">
-
+            <div class="menu-item">
+                <h1>Pastries</h1>
+                <articles>
+                    <h3>Coxinha</h3>
+                    <h4>Chicken Cone</h4>
+                    <p>Brazilian chicken croquette with a crispy golden exterior and savoury shredded chicken filling.</p>
+                </articles>
+                <articles>
+                    <h3>Pão de Queijo</h3>
+                    <h4>Cheese Bread - Gluten Free</h4>
+                    <p>Traditional Brazilian cheese bread with a lightly crisp outside and soft, cheesy centre.</p>
+                </articles>
+                <articles>
+                    <h3>Kibe</h3>
+                    <p> A Brazilian-Style Beef Croquette, crispy, golden croquette made with seasoned beef and bulgur wheat, with a savoury and flavourful filling.
+                    </p>
+                </articles>
+                <articles>
+                    <h3>Quiche</h3>
+                    <p>A savoury pastry filled with a creamy egg mixture and delicious seasonal ingredients.
+                    </p>
+                </articles>
+                <articles>
+                    <h3>Tosta Mista</h3>
+                    <h4>Ham and Cheese Toastie</h4> 
+                    <p>A classic Portuguese toastie with ham and melted cheese, toasted until golden and crispy.</p>
+                </articles>
+                <articles>
+                    <h3>Pastel de Nata</h3>
+                    <h4>Portugese Custard Tart</h4>
+                    <p>Custard tart with flaky, golden pastry and a creamy custard filling.</p>
+                </articles>
+                <articles>
+                    <h3>Cinnamon Roll</h3>
+                    <p>Soft, fluffy pastry swirled with cinnamon and sugar, finished with a sweet glaze.
+                    </p>
+                </articles>
+                <articles>
+                    <h3>Carrot Cake</h3>
+                    <p>A soft and moist carrot cake with warm spices and a sweet, creamy chocolate frosting.</p>
+                </articles>
+                <articles>
+                    <h3>Blueberry Muffin</h3>
+                    <p>A soft and fluffy muffin filled with juicy blueberries and finished with a lightly sweet touch.
+                    </p>
+                </articles>
+                <articles>
+                    <h3>Brownie</h3>
+                    <p>Rich, fudgy chocolate brownie with a soft centre.</p>
+                </articles>
+            </div>
+            <div id="pastriesimg">  </div>
         </section>
         <section id="learn">
-
+            <div class="about">
+                <h1>About Us</h1>
+                <article id="first">Some of the best places are the ones that make you want to stay. At Stay Coffee Shop, we bring together flavours, inspirations, and little moments from different places to create a space that feels familiar wherever you come from.</article>
+                <article>Come for the coffee, stay for the feeling.</article>
+                <article>Everywhere you want to be.</article>
+            </div>
+            <div class="address">
+                <h1>Find Us</h1>
+                <p>8564 Greenwood Ave N - Seattle WA</p>
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday 7am - 6pm </p>
+                <p>Saturday - Sunday 8am - 4pm </p>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.619941254012!2d-122.35752792503261!3d47.69180048209212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014202b3ba099%3A0x10ba55142a3cfe38!2s8564%20Greenwood%20Ave%20N%2C%20Seattle%2C%20WA%2098103%2C%20USA!5e0!3m2!1sen!2spt!4v1787870786059!5m2!1sen!2spt" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <form action="contact.php" method="post">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="iname" minlength="3" placeholder="Name Last Name" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="email@email.com" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="iphone" pattern="^\(\{3}\) \d{3}-\d{4}$" placeholder="(xxx) xxx-xxxx" required>
+                    </p>
+                    <p>
+                        <label for="msg">Message</label> <br>
+                        <textarea name="message" id="imsg" cols="30" rows="10" maxlength="5000"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Website developed by · Tainá Klein · <i class="fa-regular fa-copyright"></i> 2026</p>
+        <p>Website developed by  Tainá Klein  <i class="fa-regular fa-copyright"></i> 2026</p>
     </footer>
 </body>
 </html>
