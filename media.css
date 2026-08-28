@@ -57,7 +57,7 @@
         justify-content: space-around;
     }
     .about {
-        justify-content: center;
+        justify-content: center; 
         font-size: 1.5em;
     }
     .about article {
