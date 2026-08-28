@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     header {
         padding: 20px;
     }
@@ -18,10 +18,10 @@
     }
     img.desktop {
        display: block;
-       background-position: center center;
-       width: 85%;
-       height: 82vh;
+       width: 700px;
+       height: 73vh;
        margin: auto;
+       border-radius: 0px 0px 5px 5px;
     }
     #coffee {
         display: grid;
@@ -33,7 +33,9 @@
     #coffeeimg {
         width: 100%;
         height: 100%;
-        background-attachment: scroll;
+        background-attachment: fixed;
+        background-size: 55% 100%;
+        background-position: right bottom;
         border-radius: 5px;
         box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
     }
@@ -47,7 +49,9 @@
     #pastriesimg {
         width: 100%;
         height: 100%;
-        background-attachment: scroll;
+        background-attachment: fixed;
+        background-size: 50% 100%;
+        background-position: right;
         border-radius: 5px;
         box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
     }
@@ -61,6 +65,7 @@
         font-size: 1.5em;
     }
     .about article {
+        padding: 20px;
         margin: 5px;
     }
     .address {
@@ -73,5 +78,61 @@
     .contact {
         justify-content: center;
         font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    img.mobile {
+        display: none;
+    }
+
+    img.desktop {
+        display: block;
+        width: 850px;
+        height: 77vh;
+        margin: auto;
+        border-radius: 0px 0px 5px 5px;
+    }
+    #coffee {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #coffeeimg {
+        background-image: url(images/Coffee-desktop.jpg);
+        background-attachment: fixed;
+        background-size: 80% auto;
+        background-position: center;
+        border-radius: 5px;
+        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
+    }
+    #pastries {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #pastriesimg {
+        background-image: url(images/Pastry-desktop.jpg);
+        background-attachment: fixed;
+        background-position: center bottom;
+        border-radius: 5px;
+        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
+    }
+    .about > article {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.5em;
+    }
+    .address {
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    .address p {
+        font-size: 1.1em;
+    }
+    .contact {
+        justify-content: center;
+        font-size: 1.1em;
+        margin-bottom: 20px;
     }
 }

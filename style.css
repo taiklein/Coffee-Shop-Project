@@ -56,10 +56,11 @@ header > h3 {
     color: var(--green);
 }
 img.mobile {
+    display: block;
     width: 100%;
     height: 100vh;
-    background: center no-repeat fixed;
-    background-size: cover;    
+    object-fit: cover;
+    object-position: center;    
 }
 img.desktop {
     display: none;
@@ -110,7 +111,7 @@ img.desktop {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 #pastriesimg {
     background-image: url(images/Pastry.JPG);
@@ -118,7 +119,7 @@ img.desktop {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 #learn h1 {
     color: var(--terracotta);
@@ -128,6 +129,7 @@ img.desktop {
 .about > article {
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
 #first {
     text-indent: 10px;
