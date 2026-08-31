@@ -178,16 +178,19 @@ footer {
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {
     img.mobile {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
         object-position: center top;
     }
     #coffeeimg {
         height: 350px;
         background-position: center;
-        background-size: 100% auto;
+        background-size: 95% auto;
     }
     #pastriesimg {
         height: 350px;
         background-position: center;
-        background-size: 100% auto;
+        background-size: 95% auto;
     }
 }
