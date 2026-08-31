@@ -186,11 +186,11 @@ footer {
     #coffeeimg {
         height: 350px;
         background-position: center;
-        background-size: 100% auto;
+        background-size: cover;
     }
     #pastriesimg {
         height: 350px;
         background-position: center;
-        background-size: 100% auto;
+        background-size: cover;
     }
 }
