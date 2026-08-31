@@ -58,7 +58,7 @@ header > h3 {
 img.mobile {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
     object-position: 40% center;    
 }
@@ -101,9 +101,6 @@ img.desktop {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-#pastries {
-    padding: 10px;
-}
 #coffeeimg {
     background-image: url(images/Coffee.jpg);
     height: 500px;
@@ -111,6 +108,9 @@ img.desktop {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+}
+#pastries {
+    padding: 10px;
 }
 #pastriesimg {
     background-image: url(images/Pastry.JPG);
@@ -175,4 +175,19 @@ footer {
     color: var(--beige);
     padding: 10px;
     text-align: center;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    img.mobile {
+        object-position: center top;
+    }
+    #coffeeimg {
+        height: 350px;
+        background-position: center;
+        background-size: 100% auto;
+    }
+    #pastriesimg {
+        height: 350px;
+        background-position: center;
+        background-size: 100% auto;
+    }
 }
