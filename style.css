@@ -108,6 +108,8 @@ img.desktop {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
 }
 #pastries {
     padding: 10px;
@@ -119,6 +121,8 @@ img.desktop {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
 }
 #learn h1 {
     color: var(--terracotta);
@@ -185,12 +189,18 @@ footer {
     }
     #coffeeimg {
         height: 350px;
+        background-image: url(images/Coffee-desktop.jpg);
         background-position: center;
         background-size: cover;
+        border-radius: 5px;
+        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
     }
     #pastriesimg {
         height: 350px;
+        background-image: url(images/Pastry-desktop.jpg);
         background-position: center;
         background-size: cover;
+        border-radius: 5px;
+        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
     }
 }
